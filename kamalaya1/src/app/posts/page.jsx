@@ -1,17 +1,18 @@
-import React from 'react'
-import ListOfPosts from './ListOfPosts'
-const fetchPosts = ()=>{
-    return fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-}
+import React from 'react';
+import ListOfPosts from './ListOfPosts';
+const fetchPosts = () => {
+  return fetch('https://jsonplaceholder.typicode.com/posts').then((res) =>
+    res.json()
+  );
+};
 
 async function PostsPage({ params }) {
-    const posts = await fetchPosts()
+  const posts = await fetchPosts();
   return (
     <section>
-      <ListOfPosts/>
+      <ListOfPosts />
     </section>
-  )
+  );
 }
 
-export default PostsPage
+export default PostsPage;

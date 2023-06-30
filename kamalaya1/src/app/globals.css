@@ -104,6 +104,9 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+ul {
+  text-decoration: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
