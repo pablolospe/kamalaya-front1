@@ -104,8 +104,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-ul {
-  text-decoration: none;
+ul li{
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {
